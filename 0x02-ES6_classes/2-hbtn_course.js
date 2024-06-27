@@ -1,4 +1,6 @@
 //eslint-disable no-underscore-dangle
+export default HolbertonCourse;
+
 class HolbertonCourse {
   constructor(name, length, students) {
     this.name = name;
@@ -48,5 +50,3 @@ class HolbertonCourse {
     }
   }
 }
-
-export default HolbertonCourse;
