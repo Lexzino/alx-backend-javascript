@@ -8,16 +8,16 @@ export default class HolbertonClass {
   get size() {
     return this._size;
   }
-  set size(newSize) {
-    this._size = newSize;
+  set size(value) {
+    this._size = value;
   }
 
   // Getter and setter for 'location' attribute
   get location() {
     return this._location;
   }
-  set location(newLocation) {
-    this._location = newLocation;
+  set location(value) {
+    this._location = value;
   }
 
   // Cast to Number returns the size
