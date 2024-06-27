@@ -1,6 +1,4 @@
 //eslint-disable no-underscore-dangle
-export default HolbertonCourse;
-
 class HolbertonCourse {
   constructor(name, length, students) {
     this.name = name;
@@ -13,9 +11,9 @@ class HolbertonCourse {
     return this._name;
   }
 
-  set name(value) {
-    if (typeof value === 'string') {
-      this._name = value;
+  set name(name) {
+    if (typeof name === 'string') {
+      this._name = name;
     } else {
       throw new TypeError('Name must be a string');
     }
@@ -26,9 +24,9 @@ class HolbertonCourse {
     return this._length;
   }
 
-  set length(value) {
-    if (typeof value === 'number') {
-      this._length = value;
+  set length(length) {
+    if (typeof length === 'number') {
+      this._length = length;
     } else {
       throw new TypeError('Length must be a number');
     }
@@ -39,14 +37,16 @@ class HolbertonCourse {
     return this._students;
   }
 
-  set students(value) {
+  set students(students) {
     if (
       Array.isArray(students)
-      && students.every((s) => typeof student  === 'string')
+      && students.every((s) => typeof s === 'string')
     ) {
-      this._students = value;
+      this._students = students;
     } else {
       throw new TypeError('Students must be an array of strings');
     }
   }
 }
+
+export default HolbertonCourse;
