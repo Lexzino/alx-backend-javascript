@@ -8,6 +8,7 @@ export default class HolbertonClass {
   get size() {
     return this._size;
   }
+
   set size(newSize) {
     this._size = newSize;
   }
@@ -16,6 +17,7 @@ export default class HolbertonClass {
   get location() {
     return this._location;
   }
+
   set location(newLocation) {
     this._location = newLocation;
   }
